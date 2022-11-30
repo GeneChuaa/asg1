@@ -5,17 +5,52 @@ body{
     font-weight: 300;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 header{
     background: #d1f531;
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+}
+
+.nav-toggle{
+    display:none;
+}
+
+.nav-label{
+    position: absolute;
+    top:20;
+    left:0;
+    margin-left: 1em;
+    border: 1px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-label span,
+.nav-label span::before,
+.nav-label span::after{
+    display:block;
+    background:rgb(34, 2, 80);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-label span::before,
+.nav-label span::after{
+    content: '';
+    position:absolute;
+}
+
+.nav-label span::before{
+    bottom:7px;
+}
+
+.nav-label span::after{
+    top:7px;
 }
 
 nav{
@@ -25,6 +60,9 @@ nav{
     left:0;
     background:#d1f531;
     width:100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in;
 }
 
 nav ul{
@@ -50,5 +88,10 @@ nav a:hover{
 }
 
 .logo{
-    width:40px;
+    text-align: center;
+    color:rgb(6, 6, 126);
+}
+
+.nav-toggle:checked ~ nav{
+    transform:scale(1,1)
 }
