@@ -95,3 +95,6 @@ nav a:hover{
 .nav-toggle:checked ~ nav{
     transform:scale(1,1)
 }
+.maroon{
+    position: absolute;
+}
