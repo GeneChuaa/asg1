@@ -52,6 +52,7 @@ nav ul li a{
 #feature{
     width: 100%;
     padding: 70px 0;
+    background: #cececea0;
 }
 .title{
     text-align: center;
@@ -73,9 +74,73 @@ nav ul li a{
     background: linear-gradient(#617270,#fff);
     position: absolute;
     top: 0;
-    right: 110;
+    right: 0;
     z-index: -1;
-    transform: rotate(2deg);
+    transform: rotate(170deg);
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
+}
+.fbox{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.xbox{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.xbox img{ 
+    width: 80%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 41;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#617270);
+    opacity: 0;
+    transition: 0.5s;
+}
+.xbox:hover .overlay{
+    opacity: 1;
+}
+.desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.desc h3{
+    font-size: 20px;
+    font-family: 'Diplomata SC', cursive;
+}
+.desc p{
+    font-size: 16px;
+    font-family: 'Nerko One', cursive;
+}
+.xbox:hover .desc{
+    bottom: 40%;
+    opacity: 1;
+}
+.date h3{
+    color: black;
 }
