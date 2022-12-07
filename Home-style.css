@@ -3,7 +3,7 @@
     padding: 0;
 }
 #banner{
-    background:linear-gradient(rgba(0,0,0,0.5),#617270),url(maroon5.jpg);
+    background:linear-gradient(rgba(118, 140, 111, 0.5),#e6a3d7),url(maroon5.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -23,7 +23,7 @@
 .face{
     color:white;
     transition: color 0.2s;
-    position: fixed;
+    position: absolute;
     top: 1%;
     left: 98%;
     text-decoration: none;
@@ -46,10 +46,16 @@
 }
 
 .logo{
-    width: 140px;
+    width: 200px;
     position: absolute;
     top: 1%;
-    right:46%;
+    left: 43%;
+}
+.logo2{
+    width: 200px;
+    position: absolute;
+    top: 3%;
+    left: 44%;
 }
 #sideNav{
     font-family: 'Zen Dots', cursive;
@@ -71,25 +77,23 @@ nav ul li a{
     color: #fff;
 }
 #menuBtn{
-    width: 50px;
-    height: 50px;
-    background: #617270;
     text-align: center;
     position: fixed;
     left: 30px;
     top: 20px;
-    border-radius: 3px;
     z-index: 3;
     cursor: pointer;
 }
 #menuBtn img{
-    width: 20px;
+    width: 50px;
     margin-top: 15px;
 }
+
+
 #feature{
     width: 100%;
     padding: 70px 0;
-    background: #aab077e2;
+    background: linear-gradient(#e7b4dc,rgb(192, 199, 111));
 }
 .title{
     text-align: center;

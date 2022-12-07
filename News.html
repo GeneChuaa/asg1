@@ -1,24 +1,52 @@
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="News-style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 
-<header>
+<body>
+    <section id="banner">
+        <img src="news.png" class="logo">
 
-    <h1 class="logo">logo</h1>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a class= "active" href="News.html">News</a></li>
-            <li><a href="Tour.html">Tour</a></li>
-        </ul>
-    </nav>
-    <div class="body-text"><h1>This is news page</h1></div>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class= "active" href="News.html">News</a></li>
+                <li><a href="Tour.html">Tour</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="nav.png" id="menu">
+    </div>
 
-    <label for="nav-toggle" class="nav-label">
-        <span></span>
-    </label>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        
+        sideNav.style.left = "-250px";
+        
+        menuBtn.onclick = function(){
+            if(sideNav.style.left == "-250px"){
+                sideNav.style.left = "0";
+                menu.src = "close.png";
+            }
+            else{
+                sideNav.style.left = "-250px";
+                menu.src = "nav.png";
+            }
+        }
+    </script>
 
-</header>
+        <div class="fbox">
+            <div class="xbox">
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
