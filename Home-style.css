@@ -8,6 +8,43 @@
     background-position: center;
     height: 100vh;
 }
+
+.tweet{
+    color:white;
+    transition: color 0.2s;
+    position: absolute;
+    top: 1%;
+    left: 95%;
+    text-decoration: none;
+}
+.tweet:hover{
+    color: aqua;
+}
+.face{
+    color:white;
+    transition: color 0.2s;
+    position: fixed;
+    top: 1%;
+    left: 98%;
+    text-decoration: none;
+}
+.face:hover{
+    color: blue;
+}
+
+.insta{
+    color:white;
+    transition: color 0.2s;
+    position: absolute;
+    top: 1%;
+    left: 92%;
+    text-decoration: none;
+}
+
+.insta:hover{
+    color: rgba(175, 8, 175, 0.784);
+}
+
 .logo{
     width: 140px;
     position: absolute;
@@ -52,7 +89,7 @@ nav ul li a{
 #feature{
     width: 100%;
     padding: 70px 0;
-    background: #cececea0;
+    background: #aab077e2;
 }
 .title{
     text-align: center;
@@ -71,7 +108,7 @@ nav ul li a{
     content: '';
     width: 150px;
     height: 65px;
-    background: linear-gradient(#617270,#fff);
+    background: linear-gradient(#647743,#fff);
     position: absolute;
     top: 0;
     right: 0;
@@ -91,7 +128,7 @@ nav ul li a{
     text-align: center;
     border-radius: 7px;
     margin-bottom: 20px;
-    color: #fff;
+    color: rgb(231, 231, 231);
     position: relative;
 }
 .xbox img{ 

@@ -9,22 +9,39 @@
 </head>
 
 <body>
+
 <section id="banner">
     <img src="logo.png" class="logo">
+    
+    
+    <a href="https://twitter.com/maroon5" target="_blank">
+        <ion-icon name="logo-twitter"  class="tweet"></ion-icon>
+    </a>
+    <a href="https://www.facebook.com/maroon5" target="_blank">
+        <ion-icon name="logo-facebook"  class="face"></ion-icon>
+    </a>
+    <a href="https://www.instagram.com/maroon5/" target="_blank">
+        <ion-icon name="logo-instagram"  class="insta"></ion-icon>
+    </a>
+
 </section>
 
 <div id="sideNav">
     <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Tour</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Tour.html">Tour</a></li>
     </ul>
     </nav>
 </div>
 <div id="menuBtn">
     <img src="nav.png" id="menu">
 </div>
+
+
+
+
 
 <section id="feature">
     <div class="title">
@@ -99,5 +116,7 @@ menuBtn.onclick = function(){
 }
 </script>
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
