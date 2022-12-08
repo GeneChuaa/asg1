@@ -3,10 +3,10 @@
     padding: 0;
 }
 #banner{
-    background:linear-gradient(rgb(255, 255, 255),#d6da66);
+    background:linear-gradient(#d8e3b1,#d6da66);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 210vh;
 }
 .logo{
     width: 140px;
@@ -45,16 +45,100 @@ nav ul li a{
     width: 50px;
     margin-top: 15px;
 }
+#news{
+    width: 100px;
+    padding: 100px 0px;
+    margin: auto;
+}
 .fbox{
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
 }
-
 .xbox{
-    width: 80px;
-    height: 80px;
-    color: rgb(240, 12, 12);
-    position: relative;
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    color: rgb(231, 231, 231);
+}
+.xbox1 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    right: 60%;
+    top: 15%;
+}
+.xbox2 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+}
+.xbox3 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    right: 60%;
+    top: 80%;
+}
+.xbox4 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+.xbox5 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    right: 60%;
+    top: 145%;
+}
+.xbox6 img{ 
+    width: 28%;
+    height: 50%;
+    border-radius: 7px;
+    position: absolute;
+    left: 60%;
+    top: 145%;
+}
+.date1{
+    position: absolute;
+    right: 58%;
+    top: 65%;
+}
+.date2{
+    position: absolute;
+    left: 60%;
+    top: 65%;
+}
+.date3{
+    position: absolute;
+    right: 60%;
+    top: 130%;
+}
+.date4{
+    position: absolute;
+    left: 60%;
+    top: 130%;
+}
+.date5{
+    position: absolute;
+    right: 46%;
+    top: 195%;
+}
+.date6{
+    position: absolute;
+    left: 60%;
+    top: 195%;
 }
