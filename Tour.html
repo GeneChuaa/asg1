@@ -1,22 +1,47 @@
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="Tour-style.css" rel="stylesheet" type="text/css">
 </head>
 
-<header>
+<body>
+    <section id="banner">
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a class= "active" Tour.html>Tour</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="nav.png" id="menu">
+        </div>
 
-    <h1 class="logo">logo</h1>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="News.html">News</a></li>
-            <li><a class= "active" Tour.html>Tour</a></li>
-        </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-label">
-        <span></span>
-    </label>
-
-</header>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            
+            sideNav.style.left = "-250px";
+            
+            menuBtn.onclick = function(){
+                if(sideNav.style.left == "-250px"){
+                    sideNav.style.left = "0";
+                    menu.src = "close.png";
+                }
+                else{
+                    sideNav.style.left = "-250px";
+                    menu.src = "nav.png";
+                }
+            }
+        </script>
+    </section>
+    <section id="boom">
+        
+    </section>
+</body>
+</html>
