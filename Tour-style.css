@@ -12,7 +12,7 @@
     background: #fff;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 60vh;
 }
 .logo{
     width: 140px;
@@ -50,4 +50,43 @@ nav ul li a{
 #menuBtn img{
     width: 50px;
     margin-top: 15px;
+}
+.header{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+.item{
+    display:inline-block;
+    padding-right: .5em;
+}
+.date{
+    width: 30%;
+}
+.arena{
+    width: 24%;
+}
+.city{
+    width: 32%;
+}
+.btn{
+    max-width: 19%;
+}
+.pri{
+    color: white;
+    background-color: pink;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.pri:hover{
+    background-color: rgb(240, 139, 156);
 }
